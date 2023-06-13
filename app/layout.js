@@ -14,7 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`p-2 m-0 md:m-6 lg:m-8 ${roboto.className} min-h-screen`}>
+      <body className={`p-0 m-0 md:p-2 md:m-6 lg:m-8 ${roboto.className} min-h-screen`}>
         <Header />
         {children}
         <Footer />
