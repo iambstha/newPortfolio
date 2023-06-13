@@ -1,7 +1,10 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Roboto } from 'next/font/google'
+import Header from '@/components/core/Header'
+import Footer from '@/components/core/Footer'
+import '@fortawesome/fontawesome-svg-core/styles.css';
 
-const inter = Inter({ subsets: ['latin'] })
+const roboto = Roboto({subsets:['latin'], weight: ['400']})
 
 export const metadata = {
   title: 'Create Next App',
@@ -11,7 +14,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`p-2 m-0 md:m-6 lg:m-8 ${roboto.className} min-h-screen`}>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   )
 }
