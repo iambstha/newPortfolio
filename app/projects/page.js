@@ -64,8 +64,8 @@ export default async function projects(){
                                     <p className=' text-sm font-thin text-slate-500 pb-2 h-14 overflow-hidden ' >{project.description}</p>
                                     <div>
                                         <ul className=' flex gap-2 ' >
-                                            {project.sourceUrl ? <li><Link className=' border-[1px] border-slate-800 bg-slate-800 hover:bg-slate-700 hover:border-slate-700 py-[4px] px-[8px] rounded text-slate-50 ' href={project.sourceUrl}>Source Code</Link></li> : ''}
-                                            {project.liveUrl ? <li><Link className=' border-[1px] border-slate-800 bg-slate-800 hover:bg-slate-700 hover:border-slate-700 py-[4px] px-[8px] rounded text-slate-50 ' href={project.liveUrl}>Live</Link></li> : ''}
+                                            {project.sourceUrl ? <li><a className=' border-[1px] border-slate-800 bg-slate-800 hover:bg-slate-700 hover:border-slate-700 py-[4px] px-[8px] rounded text-slate-50 ' href={project.sourceUrl}>Source Code</a></li> : ''}
+                                            {project.liveUrl ? <li><a className=' border-[1px] border-slate-800 bg-slate-800 hover:bg-slate-700 hover:border-slate-700 py-[4px] px-[8px] rounded text-slate-50 ' href={project.liveUrl}>Live</a></li> : ''}
                                         </ul>
                                     </div>
                                 </div>
