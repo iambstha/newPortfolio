@@ -1,5 +1,5 @@
 import { GraphQLClient } from 'graphql-request'
-const hygraph = new GraphQLClient('https://api-ap-south-1.hygraph.com/v2/cliuejspy07x801up5ktf17uo/master')
+const hygraph = new GraphQLClient(process.env.HYGRAPH_CONTENT_API)
 
 const getHygraph = async () => {
     const response  = await hygraph.request(
