@@ -1,10 +1,10 @@
 import './globals.css'
-import { Roboto } from 'next/font/google'
+import { Space_Grotesk } from 'next/font/google'
 import Header from '@/components/core/Header'
 import Footer from '@/components/core/Footer'
 import '@fortawesome/fontawesome-svg-core/styles.css';
 
-const roboto = Roboto({subsets:['latin'], weight: ['400']})
+const fontAppply = Space_Grotesk({subsets:['latin'], weight: ['400']})
 
 export const metadata = {
   title: 'Create Next App',
@@ -14,7 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`p-0 m-0 md:p-2 md:m-6 lg:m-8 ${roboto.className} min-h-screen`}>
+      <body className={`p-0 m-0 md:p-2 md:m-6 lg:m-8 ${fontAppply.className} min-h-screen`}>
         <Header />
         {children}
         <Footer />

@@ -14,12 +14,12 @@ const page = async () => {
           <ul className=' flex gap-4 flex-wrap w-full justify-center md:justify-center lg:justify-start ' >
             {posts.map(post => (
               <li className='py-4 border-b-[1px] border-slate-200 w-full ' >
-                <div className='flex justify-between text-slate-500 text-sm' >
-                  <span>{post.createdAt}</span>
+                <div className='flex justify-between text-orange-400 text-sm' >
+                  <span>{post.createdAt.slice(0,10)}</span>
                   <span>By {post.author.name}</span>
                 </div>
                 <h3 className=' text-xl text-slate-800 mb-4 ' >{post.title}</h3>
-                <Link href={`/blogs/${post.slug}`} className=' border-[1px] p-2 px-4 text-sm bg-slate-200 border-slate-200 ' >Read <FontAwesomeIcon icon={faArrowRight} className=' text-slate-600 ' ></FontAwesomeIcon> </Link>
+                <Link href={`/blogs/${post.slug}`} className=' border-[1px] p-2 px-3 text-sm bg-orange-200 border-orange-200 hover:border-orange-300 hover:bg-orange-300 ' >Read <FontAwesomeIcon icon={faArrowRight} className=' text-slate-600 ' ></FontAwesomeIcon> </Link>
               </li>))}
           </ul>
         </div>
