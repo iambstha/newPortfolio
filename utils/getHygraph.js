@@ -12,6 +12,21 @@ const getHygraph = async () => {
                 liveUrl
                 sourceUrl
             }
+            posts {
+                id
+                title
+                subtitle
+                slug
+                createdAt
+                author {
+                  id
+                  name
+                  pp {
+                    id
+                    fileName
+                  }
+                }
+              }
           }`
     )
     return response
