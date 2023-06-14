@@ -7,9 +7,13 @@
     padding: 1rem 0;
 }
 .content_blog h3{
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: bold;
     color: rgb(11, 6, 44);
+}
+.content_blog h5{
+    font-size: 1rem;
+    font-weight: 500;
 }
 .content_blog p{
     color: rgb(34, 30, 63);
@@ -29,4 +33,27 @@
 }
 .content_blog ul li,.content_blog ol li{
     list-style: decimal;
+}
+.content_blog pre{
+    white-space: pre-wrap;
+    overflow-x: auto;
+    background-color: #fff8e6;
+    padding: 5px;
+    padding-left: 1rem;
+    margin: 1rem 0;
+}
+
+.content_blog blockquote :not(pre,code){
+    border-left: 2px solid #e2ac4f;
+    background-color: #fff8e6;
+    padding-left: 1rem;
+}
+
+.content_blog blockquote pre{
+    background-color: #f3f0e8;
+    white-space: pre-wrap;
+    overflow-x: auto;
+    padding: 5px;
+    padding-left: 1rem;
+    margin: 1rem 0;
 }
