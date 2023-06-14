@@ -5,10 +5,10 @@ const Nav = () => {
   return (
     <div>
         <ul className=' flex gap-4 ' >
-            <li><Link href='/about' className=' flex gap-1 text-slate-700 hover:underline hover:text-slate-950 ' ><span className=' text-sm md:text-base font-semibold hover:font-bold text-orange-400 ' >01</span><span className=' text-sm md:text-base ' >about</span></Link></li>
-            <li><Link href='/blogs' className=' flex gap-1 text-slate-700 hover:underline hover:text-slate-950 ' ><span className=' text-sm md:text-base font-semibold hover:font-bold text-orange-400 ' >02</span><span className=' text-sm md:text-base ' >blogs</span></Link></li>
-            <li><Link href='/projects' className=' flex gap-1 text-slate-700 hover:underline hover:text-slate-950 ' ><span className=' text-sm md:text-base font-semibold hover:font-bold text-orange-400 ' >03</span><span className=' text-sm md:text-base ' >projects</span></Link></li>
-            <li><Link href='/resume' className=' flex gap-1 text-slate-700 hover:underline hover:text-slate-950 ' ><span className=' text-sm md:text-base font-semibold hover:font-bold text-orange-400 ' >04</span><span className=' text-sm md:text-base ' >resume</span></Link></li>
+            <li><Link href='/about' className=' flex gap-1 text-slate-700 hover:underline hover:text-slate-950 ' ><span className=' text-sm md:text-base font-semibold hover:font-bold text-yellow-700 ' >01</span><span className=' text-sm md:text-base ' >about</span></Link></li>
+            <li><Link href='/blogs' className=' flex gap-1 text-slate-700 hover:underline hover:text-slate-950 ' ><span className=' text-sm md:text-base font-semibold hover:font-bold text-yellow-700 ' >02</span><span className=' text-sm md:text-base ' >blogs</span></Link></li>
+            <li><Link href='/projects' className=' flex gap-1 text-slate-700 hover:underline hover:text-slate-950 ' ><span className=' text-sm md:text-base font-semibold hover:font-bold text-yellow-700 ' >03</span><span className=' text-sm md:text-base ' >projects</span></Link></li>
+            <li><Link href='/resume' className=' flex gap-1 text-slate-700 hover:underline hover:text-slate-950 ' ><span className=' text-sm md:text-base font-semibold hover:font-bold text-yellow-700 ' >04</span><span className=' text-sm md:text-base ' >resume</span></Link></li>
         </ul>
     </div>
   )

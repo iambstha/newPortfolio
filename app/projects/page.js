@@ -56,15 +56,15 @@ export default async function projects(){
                 <div className=' w-full ' >
                     <ul className=' flex gap-4 flex-wrap w-full justify-center md:justify-center lg:justify-start ' >
                         {projects?.map(project => (
-                            <li key={project.id} className=' flex flex-col border-[1px] border-orange-200 hover:border-orange-300 hover:rounded hover:shadow-none lg:hover:shadow-sm  w-[95%] md:w-[60%] lg:w-[32%] ' >
-                                <div href='' className=' cursor-default p-2 md:p-4 flex flex-col w-full leading-relaxed ' >
+                            <li key={project.id} className=' flex flex-col border-[1px] border-yellow-500 hover:border-yellow-700 hover:rounded-lg hover:shadow-none lg:hover:shadow-sm  w-[95%] md:w-[60%] lg:w-[32%] ' >
+                                <div href='' className=' cursor-default p-2 py-4 md:p-4 flex flex-col w-full leading-relaxed ' >
                                     <div className='flex gap-2' >{project.tags.map(tag => (<span className=' border-[1px] border-orange-200 p-[2px] px-2 text-xs rounded-md '>{tag}</span>))}</div>
                                     <h3 className=' text-lg pt-2 font-semibold text-slate-600 '>{project.name}</h3>
                                     <p className=' text-sm font-thin text-slate-500 pb-2 h-14 overflow-hidden ' >{project.description}</p>
                                     <div>
                                         <ul className=' flex gap-2 text-sm md:text-base ' >
-                                            {project.sourceUrl ? <li><a className=' border-[1px] border-orange-300 bg-orange-300 hover:bg-orange-400 hover:border-orange-400 py-[4px] px-[8px] rounded text-slate-50 ' href={project.sourceUrl}>Source Code</a></li> : ''}
-                                            {project.liveUrl ? <li><a className=' border-[1px] border-orange-300 bg-orange-300 hover:bg-orange-400 hover:border-orange-400 py-[4px] px-[8px] rounded text-slate-50 ' href={project.liveUrl}>Live</a></li> : ''}
+                                            {project.sourceUrl ? <li><a className=' border-[1px] border-yellow-500 bg-yellow-500 hover:bg-orange-400 hover:border-orange-400 py-[4px] px-[8px] rounded text-slate-50 ' href={project.sourceUrl}>Source Code</a></li> : ''}
+                                            {project.liveUrl ? <li><a className=' border-[1px] border-yellow-500 bg-yellow-500 hover:bg-orange-400 hover:border-orange-400 py-[4px] px-[8px] rounded text-slate-50 ' href={project.liveUrl}>Live</a></li> : ''}
                                         </ul>
                                     </div>
                                 </div>
