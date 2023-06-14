@@ -3,3 +3,30 @@
 @tailwind utilities;
 
 
+.content_blog{
+    padding: 1rem 0;
+}
+.content_blog h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(11, 6, 44);
+}
+.content_blog p{
+    color: rgb(34, 30, 63);
+    line-height: 2rem;
+}
+@media (max-width: 720px) {
+    .content_blog{
+        padding: 0.5rem 0;
+    }
+    .content_blog h3{
+        font-size: 1.2rem;
+    }
+    .content_blog p{
+        line-height: 1.5rem;
+        font-size: 0.8rem;
+    }
+}
+.content_blog ul li,.content_blog ol li{
+    list-style: decimal;
+}

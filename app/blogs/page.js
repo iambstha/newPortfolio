@@ -8,7 +8,7 @@ const page = async () => {
   const { posts } = await getHygraph()
   return (
     <div className=' flex justify-center items-center w-full py-0 md:py-10 ' >
-      <div className=' flex flex-col justify-center items-start w-full md:w-2/3 p-2 md:p-0  ' >
+      <div className=' flex flex-col justify-center items-start w-full md:w-2/3 p-2 px-4 md:p-0  ' >
         <h2 className='text-2xl md:text-3xl w-full text-center md:text-left font-semibold text-slate-800 leading-relaxed ' >All Blogs</h2>
         <div className=' w-full ' >
           <ul className=' flex gap-4 flex-wrap w-full justify-center md:justify-center lg:justify-start ' >
